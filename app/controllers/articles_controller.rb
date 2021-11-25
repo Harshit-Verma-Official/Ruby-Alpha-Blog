@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 
+    # after_action, around_action : HW
     before_action :set_article, only: [:show, :edit, :update, :destroy]
 
     def show
