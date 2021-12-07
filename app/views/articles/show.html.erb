@@ -24,7 +24,7 @@
         <% end %>
         <% if logged_in? %>
           <%= link_to "Add Comment" , new_comment_path(article_id: @article.id),
-                      class: "btn btn-outline-secondary" %>
+                        class: "btn btn-outline-secondary" %>
         <% end %>
       </div>
       <div class="card-footer text-muted">
@@ -33,6 +33,7 @@
       </div>
     </div>
   </div>
+  <h3 class="text-center mt-2 mb-4">Comments</h3>
   <div class="container">
     <div class="row justify-content-center">
       <%= render @article.comments %>
